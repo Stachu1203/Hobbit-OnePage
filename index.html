@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hobbit</title>
+  </head>
+
+  <body>
+    <div id="hero">
+      <h1 class="Title">HOBBIT</h1>
+      <p class="quote">
+        ,,W pewnej norze ziemnej mieszkał sobie pewnie hobbit....``
+      </p>
+
+      <a href="#herp" style="text-decoration: none"
+        ><div class="button">WEJDŹ DO ŚRÓDZIEMIA</div></a
+      >
+      <button id="back-button" role="button"><img src="images/Door.png" alt=""></button>
+    </div>
+    <div id="book">
+      <h2 class="subtitle">O KSIĄŻCE</h2>
+      <div class="book-content">
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+          atque?Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Explicabo asperiores dolorem sequi illum, fugiat amet itaque ipsa.
+          Cupiditate ullam perspiciatis maiores recusandae magnam vero,
+          voluptates quibusdam dolorem est eius magni ad praesentium facilis
+          possimus ipsam? Labore, fuga. Sit voluptatibus eum nobis iusto
+          expedita soluta consequatur blanditiis? Vero rem fugit. Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Aliquid, autem! Dolore distinctio nulla at, provident quia labore veritatis esse nihil dolorum? 
+          Veritatis doloremque fugit aliquam perferendis pariatur! Minima, quisquam culpa! Lorem ipsum dolor sit amet 
+          consectetur adipisicing elit. Totam quia saepe
+           reprehenderit architecto sit? Tempora suscipit quisquam, optio illo voluptatem nihil rerum quia molestias! Nesciunt fugit eius sit in ab maxime facere temporibus
+           similique quis quae harum, placeat quisquam provident incidunt corrupti maiores perspiciatis ex, rem soluta fuga hic ipsum sint! Quaerat, dignissimos alias. Fugiat 
+           ullam ipsa vero quasi optio alias, fugit quis, aut autem nulla facilis iure iste quia maxime, delectus officiis! Tempore, inventore sapiente asperiores corporis quo
+            doloribus aut esse doloremque dolorum fugiat.
+           Mollitia velit asperiores, quae odio esse laboriosam ipsam perferendis nemo sint tempora optio. Minus, repellat!
+        </p>
+        <img class="ring" src="images/Ring.png" alt="Pierścień" />
+      </div>
+    </div>
+
+    <div id="heroes">
+      <h2 class="subtitle-center">BOHATEROWIE</h2>
+      <div class="gallery">
+        <div class="page">
+          <img class="page-image" src="images/Bilbo.png" alt="Bilbo" />
+          <h4 class="page-title">Bilbo Baggins</h4>
+          <p class="page-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            aliquam voluptatum incidunt deleniti totam tempore.
+          </p>
+        </div>
+        <div class="page">
+          <img class="page-image" src="images/Gandalf.png" alt="Gandalf" />
+          <h4 class="page-title">Gandalf</h4>
+          <p class="page-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            aliquam voluptatum incidunt deleniti totam tempore.
+          </p>
+        </div>
+        <div class="page">
+          <img class="page-image" src="images/Golum.png" alt="Golum" />
+          <h4 class="page-title">Gollum</h4>
+          <p class="page-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            aliquam voluptatum incidunt deleniti totam tempore.
+          </p>
+        </div>
+        <div class="page">
+          <img class="page-image" src="images/Thorin.png" alt="Thorin" />
+          <h4 class="page-title">Thorin</h4>
+          <p class="page-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            aliquam voluptatum incidunt deleniti totam tempore.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="form-section">
+      <h2 class="subtitle">ZAMÓW SWOJĄ KSIĄŻKE</h2>
+      <div class="book-order">
+        <div class="form">
+          <form class="left-form" action="">
+            <label for="fname">Imie:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Nazwisko:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="number-of-books">Ilość książek:</label><br>
+            <input type="number" min="0" id="number-of-books" name="number-of-books"><br><br>
+            <input class="submit-button" type="submit">
+          </form>
+          <form class="right-form" action="">
+            <label for="adress">Adres:</label><br>
+            <input type="adress" id="adress" name="adress"><br><br>
+            <label for="details">Inne szczegóły:</label><br>
+            <!-- <input type="text" id="details" name="details"> -->
+            <textarea name="message" id="details" rows="20" cols="30" placeholder="Wpisz swoją wiadomość tutaj..."></textarea>
+          </form>
+
+        </div>
+        <img src="images/Map.png" alt="Mapa">
+      </div>
+    </div>
+    <footer>
+      <h3 class="contact-title">Kontakt</h3>
+      <p class="contact-text">
+        Numer kontaktowy: 111 222 333 <br>
+        Adres Email: hobbit@gmail.com <br>
+        Siedziba: Zielona Góra ul. Bohaterów Westerplatte 25 <br>
+      </p>
+    </footer>
+    <script>
+
+      if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+
+      const body = document.body;
+      const entryButton = document.querySelector(".button");
+      const backButton = document.getElementById("back-button");
+      const targetSection = document.getElementById("book");
+
+    
+      body.classList.add("no-scroll");
+
+
+      window.addEventListener("load", () => {
+
+          window.scrollTo(0, 0);
+
+
+          document.body.classList.add("no-scroll");
+
+  
+  
+          if (backButton) backButton.classList.remove("visible");
+      });
+
+    
+      function scrollToContent() {
+        body.classList.remove("no-scroll");
+
+ 
+        backButton.classList.add("visible");
+
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
+      if (entryButton) {
+        entryButton.addEventListener("click", function (e) {
+          e.preventDefault(); 
+          scrollToContent();
+        });
+      }
+
+
+      function scrollToHero() {
+       
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+
+    
+        setTimeout(() => {
+          body.classList.add("no-scroll");
+          backButton.classList.remove("visible");
+        }, 300);
+      }
+
+      if (backButton) {
+        backButton.addEventListener("click", scrollToHero);
+      }
+    </script>
+  </body>
+</html>

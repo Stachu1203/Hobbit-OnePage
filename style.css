@@ -1,0 +1,259 @@
+body{
+    display:grid;
+    margin: 0;
+    background-color: #ecc57b;
+   
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#hero{
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    /* background-image: url(/Projekt-1/images/Hobbiton.png); */
+    background-image: url("images/Hobbiton.png");
+    
+    text-align: center;
+    
+}
+
+
+#back-button{
+    position: fixed;
+    bottom: 5vh;  
+    right: 5vh; 
+    width: 8vh;
+    height: 8vh;
+    border-radius: 100%;
+    background-color: #704C33;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    pointer-events: none;
+    border: 3px solid #3a2a1e;
+}
+
+#back-button img{
+    width: 70%;
+    height: 70%;
+}
+
+#back-button:hover{
+    background-color: #3a2a1e;
+}
+
+#back-button.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.Title{
+    margin-top: 20vh;
+    color: #704C33;
+    font-size: 120px;
+    margin-block-end: 0;
+}
+
+.quote{
+    color: #3a2a1e;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.button{
+    width:40vh;
+    height:10vh;
+    background-color: #c7814bb9;
+    color: #704C33;
+    border-radius: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+
+.button:hover{
+  background-color: #3a2a1e;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+#book{
+    color:  #3a2a1e;
+}
+
+.book-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.subtitle{
+    font-size: 40px;
+    margin-left: 15vh;
+     color:  #3a2a1e;
+}
+
+
+.text{
+    margin-left: 15vh;
+    font-size: 25px;
+}
+
+.ring{
+    height: 20vh;
+    width: 30vh;
+    align-self: center;
+}
+
+#heroes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2d0ad;
+    margin: 5%;
+    border-radius: 5%;
+}
+
+.subtitle-center{
+    font-size: 40px;    
+     color:  #3a2a1e;
+}
+
+.gallery{
+    width: 100vh;
+    height:125vh;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px;  
+    padding-bottom: 30px;
+    
+}
+
+.page{
+    width: 100%; 
+    max-width: 300px;
+    height: auto;
+    background-color: #704C33;
+    border-radius: 10%;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    justify-self: center;
+}
+
+.page-image{
+    width: 100%;
+    height: 60%;
+   
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.page-title{
+    margin: 0;
+    margin-top: 5%;
+}
+
+
+.book-order{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.book-order img{
+    width: 100%;
+    height: 100%;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: #3a2a1e;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+  
+    /* background-color: #745f37; */
+}
+
+.right-form{
+    justify-self: center;
+}
+.left-form{
+    justify-self: center;
+}
+
+.form input, textarea{
+    background-color: #c79470;
+    border-radius: 5%;
+    border: 3px solid #3a2a1e;
+    transition: none;
+}
+
+.submit-button{
+    width: 30vh;
+    height: 5vh;
+    background-color: #5c4330 !important;
+    color:  #F4B63C;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.submit-button:hover{
+    background-color: #F4B63C !important;
+    color: #704C33;
+}
+
+footer{
+    margin-top: 2vh;
+    background-color: #3a2a1e;
+    height: 20vh;
+    color: #F4B63C;
+}
+
+.contact-title{
+    margin-top: 4vh;
+    margin-left: 15vh;
+}
+
+.contact-text{
+    margin-left: 15vh;
+}
+
+@media (max-width: 768px) {
+    
+    .gallery {
+        grid-template-columns: 1fr; 
+        gap: 30px; 
+        height: 200vh;
+    }
+    
+    .page {
+        
+        width: 40%; 
+        max-width: none; 
+    }
+    
+    
+    .subtitle-center {
+        font-size: 30px;
+    }
+
+    .book-order{
+        grid-template-columns: 70%; 
+        align-content: center;
+        justify-content: center;
+    }
+
+}
