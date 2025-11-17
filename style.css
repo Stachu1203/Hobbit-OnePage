@@ -9,34 +9,16 @@ body{
     overflow: hidden;
 }
 
-/* #hero{
+#hero{
     background-size: cover;
     background-position: center center;
-    height: 100vh;
-    /* background-image: url(/Projekt-1/images/Hobbiton.png); 
+    height: 100dvh;
+    background-image: url(/Projekt-1/images/Hobbiton.png); 
     background-image: url("images/Hobbiton.png");
     text-align: center;
     
-} */
-
-#hero{
-  /* ścieżka do Twojego obrazka (ustaw poprawną) */
-  background-image: url(/Projekt-1/images/Hobbiton.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-
-  
-  height: 100dvh;
-
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
 }
+
 
 
 #back-button{
@@ -282,15 +264,21 @@ footer{
         margin-right: 15vh;
     }
  
-    #hero { height: 100dvh; min-height: -webkit-fill-available; }
+    #hero { 
+        height: 230dvh; 
+        min-height: -webkit-fill-available; 
+        background-image: url(/Projekt-1/images/Hobbiton1.png);  
+         background-image: url("images/Hobbiton1.png");
+
+    }
 
   .Title {
     margin-top: 12vh;  
     font-size: 140px;   
   }
 
-  .quote { font-size: 18px; }
-  .button { width: 50%; height: 8vh; font-size: 18px; margin-top: 50vh; }
+  .quote { font-size: 20px; }
+  .button { width: 50%; height: 8vh; font-size: 20px; margin-top: 50vh; }
 
   
 }
